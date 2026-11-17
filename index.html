@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscador de Películas - Adolfo Keeling</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <h1>Buscador de Películas</h1>
+      <p>Proyecto FrontEnd - Kodigo.org</p>
+      <p>Alumno: Adolfo Keeling</p>
+    </header>
+
+    <main>
+      <section class="buscador">
+        <h2>Encontrá tu película favorita</h2>
+
+        <form id="form-busqueda">
+          <input type="text" id="nombre-pelicula" placeholder="Escribí el nombre de una película" required />
+
+          <button type="submit">Buscar</button>
+          <button id="btnPopulares">Ver populares</button>
+        </form>
+      </section>
+
+      <section id="resultados" aria-live="polite">
+        <!-- Aquí aparecerán los resultados de la API -->
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
